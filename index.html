@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STITCH — Майстерня машинної вишивки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">STITCH<span>.</span></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Цифрова точність.<br>Текстильна естетика.</h1>
+                <p>Створюємо брендований одяг, шеврони та художню вишивку будь-якої складності за допомогою сучасного японського обладнання.</p>
+                <a href="#calculator" class="cta-btn">Розрахувати вартість</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <!-- Секція переваг -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Швидкість</h3>
+                <p>Власне виробництво дозволяє віддавати тиражі від 1 дня без втрати якості.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧵</div>
+                <h3>Якість ниток</h3>
+                <p>Використовуємо німецькі нитки Madeira: вони не вицвітають і витримують понад 100 прань.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Точність</h3>
+                <p>Японські верстати Tajima гарантують ідеальну деталізацію навіть на дрібних шевронах.</p>
+            </div>
+        </section>
+
+        <!-- Секція послуг (Картки) -->
+        <section class="services">
+            <h2 class="section-title">Що ми вишиваємо</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-img-placeholder">👕</div>
+                    <div class="service-desc">
+                        <h3>Брендування одягу</h3>
+                        <p>Логотипи на худі, світшотах, футболках та корпоративній формі для вашого бізнесу.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img-placeholder">🛡️</div>
+                    <div class="service-desc">
+                        <h3>Шеврони та патчі</h3>
+                        <p>Військові, брендові та спортивні шеврони на липучці (velcro) або клейовій основі.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img-placeholder">🧢</div>
+                    <div class="service-desc">
+                        <h3>Вишивка на головних уборах</h3>
+                        <p>Об'ємна 3D-вишивка на кепках, бейсболках та теплих зимових шапках.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція етапів роботи -->
+        <section class="steps-section">
+            <h2 class="section-title">Як ми працюємо</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <h4>Ідея та макет</h4>
+                    <p>Ви надсилаєте картинку або логотип, ми оцінюємо можливість реалізації.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <h4>Програмування</h4>
+                    <p>Дизайнер переводить макет у стібки (.dst кодування) для вишивальної машини.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <h4>Тестовий зразок</h4>
+                    <p>Вишиваємо пробний екземпляр на тканині, затверджуємо фото або відео з вами.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">04</div>
+                    <h4>Тираж & Доставка</h4>
+                    <p>Запускаємо повний тираж у роботу, пакуємо та відправляємо Новою Поштою.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Калькулятор замовлень -->
+        <section class="calculator-section" id="calculator">
+            <h2>Розрахунок вартості замовлення</h2>
+            <div class="calc-grid">
+                
+                <!-- Форма параметрів -->
+                <div class="calc-inputs">
+                    <div class="form-group">
+                        <label for="size">Розмір вишивки (орієнтовно)</label>
+                        <select id="size">
+                            <option value="small">Малий (до 10 см) — на кепках / грудях</option>
+                            <option value="medium" selected>Середній (до 20 см) — світшоти / худі</option>
+                            <option value="large">Великий (до 30 см) — спина куртки</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="thread">Тип ниток</label>
+                        <select id="thread">
+                            <option value="standard">Стандартні віскозні нитки</option>
+                            <option value="metallic">Металізовані (золото/срібло) (+30%)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Тираж (кількість штук): <span id="qty-label">10</span></label>
+                        <input type="range" id="quantity" min="1" max="100" value="10">
+                        <div class="range-value">
+                            <span>1 шт</span>
+                            <span>100 шт</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Виведення результату -->
+                <div class="result-box">
+                    <h3>Орієнтовна вартість:</h3>
+                    <div class="price-display" id="total-price">0 <span>грн</span></div>
+                    <div class="meta-info" id="per-item-price">Ціна за 1 шт: 0 грн</div>
+                    <div class="meta-info" id="term-delivery">Термін виконання: 2-3 дні</div>
+                    <button class="order-btn" id="open-modal-btn">Оформити замовлення</button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Модальне вікно -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-window">
+            <button class="close-btn" id="close-modal-btn">&times;</button>
+            <h2>Оформлення замовлення</h2>
+            <p class="modal-subtitle">Залиште контакти, і менеджер зв'яжеться з вами для обговорення деталей.</p>
+            
+            <div class="order-summary-box">
+                <p><strong>Ваш вибір:</strong> <span id="summary-details">...</span></p>
+                <p><strong>Сума:</strong> <span id="summary-price" style="color: var(--accent-color); font-weight: bold;">0 грн</span></p>
+            </div>
+
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="user-name">Ваше ім'я</label>
+                    <input type="text" id="user-name" required placeholder="Іван Іванов">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">Номер телефону</label>
+                    <input type="tel" id="user-phone" required placeholder="+380 (99) 000-00-00">
+                </div>
+                <button type="submit" class="submit-btn">Підтвердити замовлення</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
