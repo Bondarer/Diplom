@@ -18,12 +18,9 @@
 **HTML5**
 **CSS3**
 **JavaScript (ES6+)**
-**Figma**
-**VS Code**
-**Git / GitHub**
 ##  Опублікований продукт
 
-**https://github.com/Bondarer/Diplom**
+**https://bondarer.github.io/Diplom/**
 
 **Виконав:** Галунько Богдан В.  
 **Керівник:** Барабан Дмитро М.  
