@@ -82,17 +82,12 @@ modalOverlay.addEventListener('click', (event) => {
     }
 });
 
-orderForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+orderForm.addEventListener('submit', () => {
     
-    const name = document.getElementById('user-name').value;
-    const phone = document.getElementById('user-phone').value;
-
-    alert(`Дякуємо, ${name}!\nЗамовлення успішно оформлено.\n\nДеталі: ${currentSummaryText}\nСума: ${currentTotalText}\nМи зв'яжемося з вами за номером ${phone}.`);
+    document.getElementById('order_details_hidden').value = currentSummaryText;
+    document.getElementById('total_price_hidden').value = currentTotalText;
     
-    orderForm.reset();
     closeModal();
 });
 
-// Первинний розрахунок
 calculatePrice();
