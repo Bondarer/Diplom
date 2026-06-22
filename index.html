@@ -10,9 +10,16 @@
 
     <header>
         <div class="logo">STITCH<span>.</span></div>
+        
+        <nav class="nav-menu">
+            <a href="#services">Послуги</a>
+            <a href="#steps">Процес</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#calculator">Калькулятор</a>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
+  
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
@@ -25,7 +32,7 @@
 
     <div class="container">
         
-        <!-- Секція переваг -->
+       
         <section class="features">
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
@@ -44,8 +51,8 @@
             </div>
         </section>
 
-        <!-- Секція послуг (Картки) -->
-        <section class="services">
+        
+        <section class="services" id="services">
             <h2 class="section-title">Що ми вишиваємо</h2>
             <div class="services-grid">
                 <div class="service-item">
@@ -72,8 +79,7 @@
             </div>
         </section>
 
-        <!-- Секція етапів роботи -->
-        <section class="steps-section">
+        <section class="steps-section" id="steps">
             <h2 class="section-title">Як ми працюємо</h2>
             <div class="steps-grid">
                 <div class="step-card">
@@ -99,12 +105,83 @@
             </div>
         </section>
 
-        <!-- Калькулятор замовлень -->
+        
+<section class="gallery-section" id="gallery">
+    <h2 class="section-title">Галерея наших робіт</h2>
+    <div class="gallery-grid">
+        
+       
+        <div class="gallery-item">
+            <div class="gallery-img-wrapper">
+                
+                <img src="images/sweatshirt.jpg" alt="Світшот з корпоративним логотипом" onerror="this.src='https://placehold.co/600x500/f3f4f6/4b5563?text=🧵+Світшот+з+логотипом'">
+            </div>
+            <div class="gallery-item-desc">
+                <h3>Брендований світшот</h3>
+                <p>Машинна вишивка німецькими нитками на щільному трикотажі</p>
+            </div>
+        </div>
+
+        
+        <div class="gallery-item">
+            <div class="gallery-img-wrapper">
+                
+                <img src="images/chevron.jpg" alt="Військовий шеврон на липучці" onerror="this.src='https://placehold.co/600x500/f3f4f6/4b5563?text=🪖+Військовий+шеврон'">
+            </div>
+            <div class="gallery-item-desc">
+                <h3>Армійський шеврон</h3>
+                <p>Підвищена щільність стібків, основа з липучкою (velcro)</p>
+            </div>
+        </div>
+
+       
+        <div class="gallery-item">
+            <div class="gallery-img-wrapper">
+                <img src="images/cap.jpg" alt="Кепка з об'ємною 3D вишивкою" onerror="this.src='https://placehold.co/600x500/f3f4f6/4b5563?text=🧢+Кепка+з+3D+вишивкою'">
+            </div>
+            <div class="gallery-item-desc">
+                <h3>Бейсболка з 3D вишивкою</h3>
+                <p>Об'ємна вишивка (із застосуванням пуфу) на лобовій частині</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-img-wrapper">
+                <img src="images/patch.jpg" alt="Патч на рюкзак" onerror="this.src='https://placehold.co/600x500/f3f4f6/4b5563?text=🎒+Патч+на+рюкзак'">
+            </div>
+            <div class="gallery-item-desc">
+                <h3>Спортивний патч</h3>
+                <p>Зносостійкі нитки, стійкі до бруду та частого тертя</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-img-wrapper">
+                <img src="images/hoodie.jpg" alt="Худі з індивідуальним дизайном" onerror="this.src='https://placehold.co/600x500/f3f4f6/4b5563?text=🧥+Худі+з+вишивкою'">
+            </div>
+            <div class="gallery-item-desc">
+                <h3>Індивідуальне худі</h3>
+                <p>Художній багатоколірний малюнок на всю спину</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-img-wrapper">
+                <img src="images/towels.jpg" alt="Корпоративні рушники з вишивкою" onerror="this.src='https://placehold.co/600x500/f3f4f6/4b5563?text=🧵+Корпоративні+рушники'">
+            </div>
+            <div class="gallery-item-desc">
+                <h3>Брендовані рушники</h3>
+                <p>Вишивка на махровій тканині, витримує кип'ятіння</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
         <section class="calculator-section" id="calculator">
             <h2>Розрахунок вартості замовлення</h2>
             <div class="calc-grid">
                 
-                <!-- Форма параметрів -->
                 <div class="calc-inputs">
                     <div class="form-group">
                         <label for="size">Розмір вишивки (орієнтовно)</label>
@@ -133,7 +210,6 @@
                     </div>
                 </div>
 
-                <!-- Виведення результату -->
                 <div class="result-box">
                     <h3>Орієнтовна вартість:</h3>
                     <div class="price-display" id="total-price">0 <span>грн</span></div>
@@ -146,7 +222,6 @@
         </section>
     </div>
 
-    <!-- Модальне вікно -->
     <div class="modal-overlay" id="modal-overlay">
         <div class="modal-window">
             <button class="close-btn" id="close-modal-btn">&times;</button>
@@ -157,17 +232,19 @@
                 <p><strong>Ваш вибір:</strong> <span id="summary-details">...</span></p>
                 <p><strong>Сума:</strong> <span id="summary-price" style="color: var(--accent-color); font-weight: bold;">0 грн</span></p>
             </div>
-
-            <form id="order-form">
-                <div class="form-group">
-                    <label for="user-name">Ваше ім'я</label>
-                    <input type="text" id="user-name" required placeholder="Іван Іванов">
-                </div>
-                <div class="form-group">
-                    <label for="user-phone">Номер телефону</label>
-                    <input type="tel" id="user-phone" required placeholder="+380 (99) 000-00-00">
-                </div>
-                <button type="submit" class="submit-btn">Підтвердити замовлення</button>
+<form id="order-form" action="https://formspree.io/f/xpqgzpkl" method="POST">
+    <input type="hidden" name="Деталі_замовлення" id="order_details_hidden">
+    <input type="hidden" name="Сума" id="total_price_hidden">
+    <input type="hidden" name="_next" value="https://ВАШ-САЙТ.com/thanks.html">
+    <div class="form-group">
+        <label for="user-name">Ваше ім'я</label>
+        <input type="text" name="name" id="user-name" required placeholder="Іван Іванов">
+    </div>
+    <div class="form-group">
+        <label for="user-phone">Номер телефону</label>
+        <input type="tel" name="phone" id="user-phone" required placeholder="+380 (99) 000-00-00">
+    </div>
+    <button type="submit" class="submit-btn">Підтвердити замовлення</button>
             </form>
         </div>
     </div>
