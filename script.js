@@ -82,8 +82,7 @@ modalOverlay.addEventListener('click', (event) => {
     }
 });
 
-orderForm.addEventListener('submit', () => {
-    
+document.querySelector('.submit-btn').addEventListener('click', () => {
     document.getElementById('order_details_hidden').value = currentSummaryText;
     document.getElementById('total_price_hidden').value = currentTotalText;
     
