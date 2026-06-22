@@ -82,9 +82,9 @@ modalOverlay.addEventListener('click', (event) => {
     }
 });
 
-document.querySelector('.submit-btn').addEventListener('click', () => {
-    document.getElementById('order_details_hidden').value = currentSummaryText;
-    document.getElementById('total_price_hidden').value = currentTotalText;
+document.getElementById('order-form').addEventListener('submit', () => {
+document.getElementById('order_details_hidden').value = currentSummaryText;
+document.getElementById('total_price_hidden').value = currentTotalText;
     
     closeModal();
 });
